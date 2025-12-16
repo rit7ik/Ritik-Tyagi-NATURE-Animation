@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1536633125620-8a3245c11ffa?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+#leftblur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  height: 100%;
+  width: 45%;
+}
+#leftblur h1 {
+  font-size: 120px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+  background: url("https://images.unsplash.com/photo-1536633125620-8a3245c11ffa?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center;
+  background-size: cover;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+   animation-name: anime-4;
+  animation-duration: 2.5s;
+  animation-fill-mode:left;
+  animation-delay: 1s;
+}
+
+@keyframes anime-3 {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+#leftblur p {
+  position: absolute;
+  color: black;
+  font-size: 16px;
+  margin-top: 12px;
+  top: 75%;
+  left: 30%;
+}
+#main h2 {
+  color: rgba(255, 255, 255, 0.692);
+  font-size: 120px;
+  font-weight: 900px;
+  position: absolute;
+  top: 52%;
+  left: 47%;
+ animation-name: anime-4;
+  animation-duration: 2.8s;
+  animation-fill-mode: left to right;
+  animation-delay: 1s;
+}
+@keyframes anime-4 {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+#main h5 {
+  position: absolute;
+  font-size: 70px;
+  color: rgb(0, 0, 0);
+  top: 60%;
+  left: 82%;
+  transform: rotate(-90deg);
+  font-weight: 1;
+  letter-spacing: 10px;
+}
+#nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  color: rgb(255, 255, 255);
+}
+.navleft a {
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+.navcenter img {
+  margin: 5.5px;
+}
+.nav a {
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  padding-right: 33px;
+}
+#inportant {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1536633125620-8a3245c11ffa?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+#left {
+  height: 100%;
+  width: 43%;
+  background-color: #ffffff4a;
+  backdrop-filter: blur(7px);
+}
+#inportant-1 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  animation-name: anime-1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@keyframes anime-1 {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+#circle {
+  height: 170px;
+  width: 170px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 46%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-image: url(https://plus.unsplash.com/premium_photo-1700124162812-1d5d29087b81?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  animation-name: anime-2;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@keyframes anime-2 {
+  from {
+    top: 46%;
+  }
+  to {
+    top: -70%;
+  }
+}
